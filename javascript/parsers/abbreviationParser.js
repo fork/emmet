@@ -539,7 +539,9 @@ emmet.define('abbreviationParser', function(require, _) {
 						throw 'Invalid abbreviation: mo matching ")" found for character at ' + stream.pos;
 					}
 					break;
-					
+				case ' ':
+				    stream.next();
+					break;
 				case '>': // child operator
 					context = context.addChild();
 					stream.next();
