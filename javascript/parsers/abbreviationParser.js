@@ -540,7 +540,7 @@ emmet.define('abbreviationParser', function(require, _) {
 					}
 					break;
 				case ' ':
-				    stream.next();
+					stream.next();
 					break;
 				case '>': // child operator
 					context = context.addChild();
